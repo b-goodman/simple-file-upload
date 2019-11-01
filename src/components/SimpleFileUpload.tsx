@@ -7,6 +7,7 @@ interface SimpleFileUploadProps {
     name?: string;
     multiple?: boolean;
     onChange: (file?: File) => void;
+    accept: string[];
 }
 
   const SimpleFileUpload: FunctionComponent<SimpleFileUploadProps> = (props) => {
@@ -49,6 +50,7 @@ interface SimpleFileUploadProps {
                   <input
                     ref={fileInput}
                     type="file"
+                    accept={props.accept ? props.accept.join(",") : "*"}
                     name={props.name||"file"}
                     multiple={props.multiple||false}
                     disabled={!!file}

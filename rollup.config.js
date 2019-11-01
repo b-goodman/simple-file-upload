@@ -6,6 +6,7 @@ import glob from 'glob';
 import dts from "rollup-plugin-dts";
 
 
+
 glob.sync('src/**/*.css').forEach((css) => {  // Use forEach because https://github.com/rollup/rollup/issues/1873
 	const definition = `${css}.d.ts`
 	if (!fs.existsSync(definition))
@@ -27,7 +28,11 @@ const main = {
         {
             dest: './dist/index.js',
             format: 'es'
-        }
+        },
+        // {
+        //     dest: './dist/index.js',
+        //     format: 'cjs'
+        // }
     ],
     plugins: [
         typescript(),

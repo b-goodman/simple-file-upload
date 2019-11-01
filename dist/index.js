@@ -73,7 +73,7 @@ var SimpleFileUpload = function (props) {
                     React.createElement("div", null, "Upload File"),
                     " ",
                     React.createElement(UploadIcon, null))),
-            React.createElement("input", { ref: fileInput, type: "file", name: props.name || "file", multiple: props.multiple || false, disabled: !!file, onChange: handleChange })),
+            React.createElement("input", { ref: fileInput, type: "file", accept: props.accept ? props.accept.join(",") : "*", name: props.name || "file", multiple: props.multiple || false, disabled: !!file, onChange: handleChange })),
         React.createElement("div", { className: style.buttonRow, "data-closed": !file },
             React.createElement("div", { id: "cancel-btn" },
                 React.createElement("div", { className: style.btnWrapper, "data-disable": !file, onClick: cancelSelection },
