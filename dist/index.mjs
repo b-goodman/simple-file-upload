@@ -64,7 +64,7 @@ var SimpleFileUpload = function (props) {
             fileInput.current.value = "";
         }
     };
-    return (React.createElement("div", { className: style.fileInputModule },
+    return (React.createElement("div", { className: style.fileInputModule + " " + (props.className || "") },
         React.createElement("div", { className: style.fileInputWrapper },
             React.createElement("button", { className: style.btnFileInput, disabled: !!file }, file
                 ? React.createElement("div", { className: style.uploadHint },

@@ -46,3 +46,11 @@ Provide an array of filetypes or extensions allowed.
 ```typescript
 accept?: string[];
 ```
+
+## `className`
+
+Provide a css class name to override default styles.
+
+```typescript
+className?: string;
+```

@@ -7,6 +7,7 @@ interface SimpleFileUploadProps {
     name?: string;
     multiple?: boolean;
     accept?: string[];
+    className?: string;
     onChange: (file?: File) => void;
 }
 
@@ -34,7 +35,7 @@ interface SimpleFileUploadProps {
       }
 
       return (
-          <div className={style.fileInputModule}>
+          <div className={`${style.fileInputModule} ${props.className || ""}`}>
               <div className={style.fileInputWrapper}>
 
                   <button
