@@ -28,3 +28,9 @@ const App: FunctionComponent<{}> = () => {
     )
 }
 ```
+
+## Props
+
+ ```typescript
+ onChange: (file?: File) => void;
+ ```
