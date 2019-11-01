@@ -3,8 +3,8 @@ import { FunctionComponent } from 'react';
 interface SimpleFileUploadProps {
     name?: string;
     multiple?: boolean;
+    accept?: string[];
     onChange: (file?: File) => void;
-    accept: string[];
 }
 declare const SimpleFileUpload: FunctionComponent<SimpleFileUploadProps>;
 
