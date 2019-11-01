@@ -5,9 +5,9 @@ A very simple React component implementing the HTML5 File API using a file-type 
 ## Installation
 
 ```bash
-npm install simple-file-upload
+npm install @bgoodman/simple-file-upload
 
-yarn add simple-file-upload
+yarn add @bgoodman/simple-file-upload
 ```
 
 ## Usage
