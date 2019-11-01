@@ -1,0 +1,88 @@
+$disble-primary: #adadad;
+$disable-secondary: #cfcfcf;
+
+$drop-area-background: #BBDEFB;
+
+$module-width: 300px;
+$module-height: 200px;
+
+$icon-diameter: 16px;
+
+.file-input-module {
+  width: $module-width;
+  height: $module-height;
+}
+
+.btn-wrapper {
+    width: 16px;
+    height: 16px;
+    border: 2px solid #2e2e2e;
+    border-radius: 15px;
+    padding: 5px;
+
+  &[data-disable='true'] {
+    background: #cfcfcf;
+    border-color: $disble-primary;
+    svg path {
+      stroke: $disble-primary;
+    }
+  }
+
+  &[data-disable='false'] {
+    cursor: pointer;
+    &:hover {
+      background: #e0e0e0;
+    }
+  }
+}
+
+.file-input-wrapper {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+      border: 2px solid grey;
+    border-radius: 3px;
+    border-style: dashed;
+}
+
+.file-input-wrapper > input[type="file"] {
+    font-size: 200px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0;
+}
+
+.file-input-wrapper > .btn-file-input {
+    display: inline-block;
+    width: inherit;
+    height: inherit;
+    background: $drop-area-background;
+}
+
+.upload-hint {
+    div {
+      font-size: 2em;
+      margin: 0 0 0.5em 0;
+  }
+  svg {
+    height: 3em;
+    width: 3em;
+  }
+}
+
+
+.button-row {
+  display: flex;
+  overflow-x: hidden;
+  position: relative;
+  justify-content: space-evenly;
+  width:  calc(#{$icon-diameter} + 3 * #{$icon-diameter});
+  left: calc(#{$module-width}/2 - 2 * #{$icon-diameter});
+  top: calc(-1 * #{$module-height}/3 + #{$icon-diameter}/2);
+
+  &[data-closed='true'] {
+    width: 0px;
+  }
+}
