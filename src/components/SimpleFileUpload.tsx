@@ -6,8 +6,8 @@ import style from "./index.scss";
 interface SimpleFileUploadProps {
     name?: string;
     multiple?: boolean;
+    accept?: string[];
     onChange: (file?: File) => void;
-    accept: string[];
 }
 
   const SimpleFileUpload: FunctionComponent<SimpleFileUploadProps> = (props) => {

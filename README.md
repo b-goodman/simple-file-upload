@@ -31,6 +31,18 @@ const App: FunctionComponent<{}> = () => {
 
 ## Props
 
+### `onChange`
+
+Callback arg delivers either last committed `File` by user or `undefined` otherwise
+
  ```typescript
  onChange: (file?: File) => void;
  ```
+
+### `accpet`
+
+Provide an array of filetypes or extensions allowed.
+
+```typescript
+accept?: string[];
+```
