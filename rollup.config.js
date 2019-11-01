@@ -26,13 +26,13 @@ const main = {
     sourcemap: true,
     targets: [
         {
-            dest: './dist/index.js',
+            dest: './dist/index.mjs',
             format: 'es'
         },
-        // {
-        //     dest: './dist/index.js',
-        //     format: 'cjs'
-        // }
+        {
+            dest: './dist/index.js',
+            format: 'cjs'
+        }
     ],
     plugins: [
         typescript(),

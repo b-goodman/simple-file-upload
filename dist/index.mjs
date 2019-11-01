@@ -1,8 +1,4 @@
-'use strict';
-
-function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'default' in ex) ? ex['default'] : ex; }
-
-var React = _interopDefault(require('react'));
+import React from 'react';
 
 var CloseIcon = function () {
     return (React.createElement("svg", { width: "16", height: "16", xmlns: "http://www.w3.org/2000/svg" },
@@ -84,5 +80,5 @@ var SimpleFileUpload = function (props) {
                     React.createElement(CloseIcon, null))))));
 };
 
-module.exports = SimpleFileUpload;
-//# sourceMappingURL=index.js.map
+export default SimpleFileUpload;
+//# sourceMappingURL=index.mjs.map
