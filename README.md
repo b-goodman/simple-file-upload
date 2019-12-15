@@ -54,3 +54,13 @@ Provide a css class name to override default styles.
 ```typescript
 className?: string;
 ```
+
+## Testing
+
+### Storybook
+
+Begin preview with
+
+```bash
+yarn storybook
+```

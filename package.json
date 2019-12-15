@@ -1,6 +1,6 @@
 {
   "name": "@bgoodman/simple-file-upload",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "typings": "dist/index.d.ts",
@@ -10,18 +10,26 @@
   "description": "A very simple React component implementing the HTML5 File API using a file-type input.",
   "author": "Ben Goodman <b@thebgoodman.com>",
   "license": "MIT",
-  "keywords": ["react", "file-api", "typescript"],
+  "keywords": [
+    "react",
+    "file-api",
+    "typescript"
+  ],
   "scripts": {
     "build": "npm-run-all -s clean transpile",
     "clean": "rimraf ./dist",
     "transpile": "rollup -c rollup.config.js",
-    "watch": "rollup -c rollup.config.js -w"
+    "watch": "rollup -c rollup.config.js -w",
+    "storybook": "start-storybook"
   },
   "devDependencies": {
-    "@types/react": "^16.9.11",
+    "@babel/core": "^7.7.5",
+    "@storybook/react": "^5.2.8",
+    "@types/react": "^16.9.16",
     "autoprefixer": "^9.7.1",
     "babel-cli": "^6.26.0",
     "babel-jest": "^22.4.0",
+    "babel-loader": "^8.0.6",
     "babel-plugin-external-helpers": "^6.22.0",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
@@ -35,6 +43,8 @@
     "node-sass": "^4.13.0",
     "npm-run-all": "^4.1.5",
     "postcss-scss": "^1.0.3",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
     "react-test-renderer": "^16.2.0",
     "rimraf": "^3.0.0",
     "rollup": "^0.56.2",
@@ -50,7 +60,7 @@
     "rollup-watch": "^4.3.1",
     "style-loader": "^0.20.2",
     "typescript": "^3.8.0-dev.20191031",
-    "url-loader": "^0.6.2"
+    "url-loader": "^3.0.0"
   },
   "repository": {
     "type": "git",
